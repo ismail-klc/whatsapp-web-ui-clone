@@ -1,15 +1,17 @@
 import React, { useEffect, useRef } from 'react'
-import data from '../../data/data'
+import { useRecoilValue } from 'recoil'
+import { messagesState } from '../../atoms'
 
 const Messages = () => {
-    const messages = data.friends[0].chatlog;
+    const messages = useRecoilValue(messagesState)
+
     const myRef = useRef(null)
 
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' })
 
     useEffect(() => {
         executeScroll()
-    }, [])
+    }, [messages.length])
 
 
     return (
