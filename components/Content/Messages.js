@@ -16,7 +16,7 @@ const Messages = () => {
 
     return (
         <div className="flex flex-col overflow-y-auto flex-1 bg-[url('/img/bg-default.png')]">
-            <div className='flex flex-col px-10 py-6 md:px-16 lg:px-20' ref={myRef}>
+            <div className='flex flex-col px-6 py-6 md:px-16 lg:px-20' ref={myRef}>
                 {messages.map(m => (
                     <div key={m.message_id} className={`max-w-[70%] bg-white mb-2 text-sm flex flex-col p-2 rounded-md ${m.side === 'left' ? 'self-start' : 'self-end bg-[#DCF8C6]'}`}>
                         <div className=''>{m.text}</div>

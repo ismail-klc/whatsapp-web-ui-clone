@@ -10,3 +10,8 @@ export const messagesState = atom({
     key: 'messages',
     default: data.friends[0].chatlog,
 });
+
+export const sidebarState = atom({
+    key: 'sidebarState',
+    default: 'chats'
+})

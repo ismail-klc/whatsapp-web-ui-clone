@@ -22,15 +22,15 @@ const ChatListItem = ({ data }) => {
                 </div>
             </div>
 
-            <div className={`flex-1 ${data.id !== currentChat && "border-b"}`}>
+            <div className={`flex-1 min-w-0 ${data.id !== currentChat && "border-b"}`}>
                 <div className='flex flex-col py-2 pr-4'>
                     <div className='flex justify-between'>
                         <span className='text-lg'>{data.name}</span>
                         <span className='text-xs text-gray-400'>{data.latest_timestamp}</span>
                     </div>
 
-                    <div className='text-sm'>
-                        {data.lastChat.slice(0, 20)}
+                    <div className='inline-block text-sm truncate'>
+                        {data.lastChat}
                     </div>
                 </div>
             </div>

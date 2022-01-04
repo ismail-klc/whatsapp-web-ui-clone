@@ -23,7 +23,7 @@ const Search = () => {
             }
             {
                 focused &&
-                <div className='box-border relative flex items-center w-full h-12 px-5 bg-white'>
+                <div className='box-border relative flex items-center w-full h-12 px-5 bg-white shadow-md'>
                     <button className='text-blue-500' onClick={() => setFocused(false)}>
                         <div>
                             <span>
