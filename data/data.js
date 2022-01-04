@@ -115,12 +115,42 @@ const data = {
                     "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
                     "timestamp": "10:05 AM",
                     "side": "left",
-                    "message_id": 5
+                    "message_id": 10
                 },
                 {
                     "text": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
                     "timestamp": "10:03 AM",
                     "side": "left",
+                    "message_id": 9
+                },
+                {
+                    "text": "Or maybe not, let me check logistics and call you. Give me sometime",
+                    "timestamp": "10:03 AM",
+                    "side": "right",
+                    "message_id": 8
+                },
+                {
+                    "text": "I believe they must have misplaced it elsewhere?!",
+                    "timestamp": "10:02 AM",
+                    "side": "left",
+                    "message_id": 7
+                },
+                {
+                    "text": "Did you recieve the package I sent you the other day?",
+                    "timestamp": "10:00 AM",
+                    "side": "right",
+                    "message_id": 6
+                },
+                {
+                    "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+                    "timestamp": "10:05 AM",
+                    "side": "right",
+                    "message_id": 5
+                },
+                {
+                    "text": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                    "timestamp": "10:03 AM",
+                    "side": "right",
                     "message_id": 4
                 },
                 {
