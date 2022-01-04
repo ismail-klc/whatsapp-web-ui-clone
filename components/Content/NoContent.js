@@ -22,7 +22,7 @@ const NoContent = () => {
                     <div className='inline-flex items-center text-sm'>
                         <span className='mt-[1px]'><LaptopIcon /></span>
                         <div className='ml-1 text-gray-400'>
-                            Make calls from desktop with WhatsApp for Windows. <a className='text-[#0aa545]' href="https://www.whatsapp.com/download" target="_blank">Get it here</a>.
+                            Make calls from desktop with WhatsApp for Windows. <a className='text-[#0aa545]' rel="noreferrer" href="https://www.whatsapp.com/download" target="_blank">Get it here</a>.
                         </div>
                     </div>
                 </div>
