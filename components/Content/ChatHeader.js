@@ -2,11 +2,11 @@ import React from 'react'
 import { useRecoilValue } from 'recoil';
 import { currentChatState } from '../../atoms';
 import data from '../../data/data'
-import { MenuIcon, SearchIcon } from '../Icons';
+import { MenuIcon, SearchIcon, UserIcon } from '../Icons';
 
 const ChatHeader = () => {
     const currentChat = useRecoilValue(currentChatState)
-    const user = data.friends.find(d => d.id === currentChat)
+    const user = data.friends.find(d => d.id === currentChat) || {}
 
     return (
         <div className='h-[59px] bg-[#EDEDED] flex w-full items-center justify-between py-[10px] px-4'>
@@ -15,7 +15,8 @@ const ChatHeader = () => {
                 <div className='relative w-10 h-10 mr-5'>
                     <span className='absolute'>
                         {
-                            user.picture && <img className='rounded-full' src={user.picture} />
+                            user.picture ? <img className='rounded-full' src={user.picture} /> :
+                            <UserIcon />
                         }
                     </span>
                 </div>

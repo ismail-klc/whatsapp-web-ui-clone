@@ -20,7 +20,7 @@ const Header = () => {
                 <button>
                     <span><StatusIcon /></span>
                 </button>
-                <button>
+                <button onClick={() => setSidebar("newChat")}>
                     <span><ChatIcon /></span>
                 </button>
                 <button>

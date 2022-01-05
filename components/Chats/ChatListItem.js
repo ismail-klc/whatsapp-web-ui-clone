@@ -1,15 +1,21 @@
 import React from 'react'
 import { useRecoilValue, useSetRecoilState } from 'recoil'
-import { currentChatState } from '../../atoms'
+import { currentChatState, sidebarState } from '../../atoms'
 import { UserIcon } from '../Icons'
 
-const ChatListItem = ({ data }) => {
+const ChatListItem = ({ data, value }) => {
     const setCurrentChat = useSetRecoilState(currentChatState)
     const currentChat = useRecoilValue(currentChatState)
+    const setSidebar = useSetRecoilState(sidebarState)
+
+    const handleChange = () => {
+        setCurrentChat(data.id)
+        setSidebar("chats")
+    }
 
     return (
         <div
-            onClick={() => setCurrentChat(data.id)}
+            onClick={handleChange}
             className={`h-[72px] flex space-x-4 cursor-pointer ${data.id === currentChat ? "bg-gray-300" : "hover:bg-gray-100"}`}>
             <div className='py-2 pl-4 '>
                 <div className='relative w-14 h-14'>
@@ -30,7 +36,7 @@ const ChatListItem = ({ data }) => {
                     </div>
 
                     <div className='inline-block text-sm truncate'>
-                        {data.lastChat}
+                        {data[value]}
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ const ChatList = () => {
         <div className='flex flex-col flex-1 w-full overflow-y-auto bg-white'>
             {
                 data.profile.friends.map((data) =>
-                    <ChatListItem key={data.id} data={data} />
+                    <ChatListItem key={data.id} data={data} value={"lastChat"}/>
                 )
             }
         </div>
