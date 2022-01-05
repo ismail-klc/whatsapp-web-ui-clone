@@ -5,7 +5,7 @@ import Messages from './Messages'
 
 const ChatScreen = () => {
     return (
-        <div className='flex flex-col flex-1 w-full border-l'>
+        <div className='flex flex-col flex-1 w-full h-full border-l'>
             <ChatHeader />
             <Messages />
             <ChatBottom />

@@ -15,3 +15,8 @@ export const sidebarState = atom({
     key: 'sidebarState',
     default: 'chats'
 })
+
+export const contentBarState = atom({
+    key: 'contentBar',
+    default: ''
+})

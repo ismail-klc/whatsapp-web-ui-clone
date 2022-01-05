@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRecoilValue } from 'recoil'
-import { sidebarState } from '../../atoms'
+import { contentBarState } from '../../atoms'
 import NotConnected from '../Notifications/NotConnected'
 import ChatList from './ChatList'
 import Header from './Header'
@@ -9,10 +9,12 @@ import Profile from './Profile'
 import Search from './Search'
 
 const Sidebar = () => {
-    const sidebarVal = useRecoilValue(sidebarState)
+    const contentBar = useRecoilValue(contentBarState)
 
     return (
-        <div className='flex-[40%] h-full relative flex-grow mf:flex-[30%] flex-col flex min-w-[300px]'>
+        <div className={`h-full relative flex-grow  flex-col flex min-w-[300px]
+            ${contentBar === '' ? "flex-[35%] full:flex-[32%]" : "flex-[25%] full:flex-[25%]"}
+        `}>
             <Header />
             <NotConnected />
             <Search />
